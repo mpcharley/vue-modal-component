@@ -1,7 +1,17 @@
 <template>
   <div id="app">
     <button id="show-modal" @click="showModal = true">Show Modal</button>
-    <modal v-if="showModal" @close="showModal = false"/>
+    <modal v-if="showModal" @close="showModal = false">
+      <template v-slot:header>
+        <p>SSSS</p>
+      </template>
+      <template v-slot:body>
+        <p>SSSS</p>
+      </template>
+      <template v-slot:footer>
+        <p>SSSS</p>
+      </template>
+    </modal>
   </div>
 </template>
 
