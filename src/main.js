@@ -1,5 +1,4 @@
 import Vue from "vue";
-import Axios from "axios";
 import App from "./App.vue";
 import store from "./store";
 import vSelect from "vue-select";
@@ -20,7 +19,6 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(ToggleButton);
 Vue.component("v-select", vSelect);
 Vue.config.productionTip = false;
-Vue.prototype.$http = Axios;
 
 new Vue({
   store,
